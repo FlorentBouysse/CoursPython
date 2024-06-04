@@ -1,1 +1,2 @@
-PHP et Python sont cool !
+Salut mecton !
+Au revoir

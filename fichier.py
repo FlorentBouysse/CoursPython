@@ -6,6 +6,10 @@
 chemin = r"D:\Projects\CoursPython\text.txt";
 chemin2 = r"D:\Projects\CoursPython\text2.txt";
 
+###################################################################################
+### READ FILE
+###################################################################################
+
 # Ici on ouvre le fichier en mode lecture (r) et on le ferme
 # Si tu ne ferme pas, cela peux poser probleme
 f = open(chemin, "r");
@@ -27,3 +31,17 @@ with open(chemin2, "r") as j:
     contenu = j.read().splitlines();
     contenu = " ".join(contenu);
     print(contenu); # même résultat qu'au dessus
+
+
+###################################################################################
+### WRITE FILE
+###################################################################################
+
+# Pour écrire dans un fichier, on peut utiliser "w" et la fonction ".write()" seulement
+# cela supprimera le contenu du fichier cible
+with open(chemin, "w") as f:
+    contenu = f.write("Salut mecton !");
+
+# "a" permet d'ajouter du contenu dans un fichier "a" == append
+with open(chemin, "a") as f:
+    contenu = f.write("\nAu revoir");
