@@ -45,3 +45,18 @@ with open(chemin, "w") as f:
 # "a" permet d'ajouter du contenu dans un fichier "a" == append
 with open(chemin, "a") as f:
     contenu = f.write("\nAu revoir");
+
+
+###################################################################################
+### ERREUR COURANTE
+###################################################################################
+
+# Ici on utilise deux fois ".read()" donc on devrait avoir deux fois les éléments du 
+# fichier, mais en réalité, nous ne l'aurons qu'une seule fois car ".read()" utilise
+# une curseur et lors de la seconde lecture, le curseur sera à la fin.
+# On doit utiliser ".seek(0)" pour revenir au début
+with open(chemin, "r") as f:
+    print(f.read())
+    # f.seek(0);
+    contenu = f.read();
+    print(contenu);
