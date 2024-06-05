@@ -3,7 +3,7 @@ import json
 chemin = r"D:\Projects\CoursPython\fichier.json";
 
 # Ici on écrit du json grâce à ".dump()", dans le fichier
-# Les guillemets reteront
+# Les guillemets resteront
 with open(chemin, 'w') as f:
     json.dump("Bonjour", f);
 
