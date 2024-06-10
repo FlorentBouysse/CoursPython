@@ -9,7 +9,7 @@ import shutil
 # .cwd() est le chemin absolu jusqu'au dossier actuel
 p = Path.cwd();
 
-p = p / "DossierTest";
+p = p / "ManipulationFichier" / "pathlib" / "DossierTest";
 
 print(p);
 # L'argument "exist_ok=True" est ici pour éviter une erreur
