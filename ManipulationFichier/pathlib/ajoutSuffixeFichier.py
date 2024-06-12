@@ -6,6 +6,6 @@ p = Path.cwd() / "ManipulationFichier" / "pathlib" / "img.png";
 
 p = p.parent / (p.stem + "-lowres" + p.suffix)
 
-p.touch();
-print(p);
+# p.touch();
+# print(p);
 
